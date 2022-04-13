@@ -31,4 +31,4 @@ sass:
 include:            [ "robots.txt" ]
 exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile", "script" ]
 
-remote_theme: heiswayi/the-plain
+remote_theme: mmistakes/minimal-mistakes
