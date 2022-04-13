@@ -1,34 +1,43 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
 title: Tejas Narayan
 email: tejas@narayan.dev
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+  My name is Tejas Narayan, I'm looking for opportunities in HealthTech or EdTech in NYC for when I graduate in Oct 2022.
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "tjsnryn.dev" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  tjsnryn
 
+logo_url:           https://avatars.githubusercontent.com/u/7364824?v=4
+
+permalink:          /:title # Post permalink
+mathjax:            true  # enables support for mathjax - set to 'false' to disable
+social_share_previews: true
+
+# Site Build
+highlighter:        rouge
+markdown:           kramdown
+kramdown:
+    input:          GFM
+sass:
+    style:          :compressed
+
+# Other Params
+include:            [ "robots.txt" ]
+exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile", "script" ]
+plugins:
+  - jekyll-sitemap
+
+links:
+  - title: About
+    url: /about
+    external: true
+  - title: CV
+    url: /cv
+    external: true
+
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
+  - jekyll-redirect-from
+
+remote_theme: heiswayi/the-plain
