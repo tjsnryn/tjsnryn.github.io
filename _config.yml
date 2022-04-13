@@ -2,9 +2,9 @@ title: Tejas Narayan
 email: tejas@narayan.dev
 description: >- # this means to ignore newlines until "baseurl:"
   My name is Tejas Narayan, I'm looking for opportunities in HealthTech or EdTech in NYC for when I graduate in Oct 2022.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "tjsnryn.dev" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:       tjsnryn
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://tjsnryn.dev" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: tjsnryn
 
 logo_url:              https://avatars.githubusercontent.com/u/7364824?v=4
 
