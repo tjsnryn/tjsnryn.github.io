@@ -4,13 +4,20 @@ description: >- # this means to ignore newlines until "baseurl:"
   My name is Tejas Narayan, I'm looking for opportunities in HealthTech or EdTech in NYC for when I graduate in Oct 2022.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "tjsnryn.dev" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  tjsnryn
+github_username:       tjsnryn
 
-logo_url:           https://avatars.githubusercontent.com/u/7364824?v=4
+logo_url:              https://avatars.githubusercontent.com/u/7364824?v=4
 
-permalink:          /:title # Post permalink
-mathjax:            true  # enables support for mathjax - set to 'false' to disable
+permalink:             /:title # Post permalink
+mathjax:               true  # enables support for mathjax - set to 'false' to disable
 social_share_previews: true
+
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-remote-theme
+  - jekyll-redirect-from
+  - jekyll-sitemap
 
 # Site Build
 highlighter:        rouge
@@ -23,21 +30,5 @@ sass:
 # Other Params
 include:            [ "robots.txt" ]
 exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile", "script" ]
-plugins:
-  - jekyll-sitemap
-
-links:
-  - title: About
-    url: /about
-    external: true
-  - title: CV
-    url: /cv
-    external: true
-
-# Build settings
-plugins:
-  - jekyll-feed
-  - jekyll-remote-theme
-  - jekyll-redirect-from
 
 remote_theme: heiswayi/the-plain
